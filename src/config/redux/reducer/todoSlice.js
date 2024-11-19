@@ -4,10 +4,7 @@ import { createSlice, nanoid } from "@reduxjs/toolkit";
 const todoSlice = createSlice({
     name: "Todo",
     initialState: {
-        todo: [{
-            title: "hello world",
-            id: nanoid
-        }]
+        todo: []
     },
     reducers: {
         addTodo: (state, action) => {
